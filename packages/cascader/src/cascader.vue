@@ -6,10 +6,10 @@
       realSize && `el-cascader--${realSize}`,
       { 'is-disabled': isDisabled }
     ]"
-    v-clickoutside="() => toggleDropDownVisible(false)"
+    v-clickoutside="toggleDropDownVisible(false)"
     @mouseenter="inputHover = true"
     @mouseleave="inputHover = false"
-    @click="() => toggleDropDownVisible(readonly ? undefined : true)"
+    @click="toggleDropDownVisible(readonly ? undefined : true)"
     @keydown="handleKeyDown">
 
     <el-input
